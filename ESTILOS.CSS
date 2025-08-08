@@ -170,6 +170,23 @@ nav ul.menu li:hover .submenu {
     flex-direction: column;
     gap: 6px;
   }
-}
+
+  .boton-vermas {
+    display: inline-block;
+    background-color: #1b4557;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .boton-vermas:hover {
+    background-color:#426e83; /* Tonalidad ligeramente más clara al pasar el puntero */
+  }
+  }
+
 
 
