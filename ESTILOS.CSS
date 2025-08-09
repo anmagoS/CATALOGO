@@ -31,6 +31,46 @@ body {
 .nav-link:hover {
   background-color: #163544;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1B4557;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdown-item {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #163544;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .header {
   background-color: #1B4557;
   color: white;
