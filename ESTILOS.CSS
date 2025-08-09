@@ -31,7 +31,7 @@ body {
 .nav-link:hover {
   background-color: #163544;
 }
-header {
+.header {
   background-color: #1B4557;
   color: white;
   padding: 16px;
