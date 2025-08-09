@@ -3,14 +3,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>JEANS DAMA | ANMAGO</title>
+  <title>JEANS DAMA | ANMAGO Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://anmagos.github.io/CATALOGO/ESTILOS.CSS">
 </head>
 <body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="https://sites.google.com/view/anmagostore" class="nav-link">Cat?logo</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSevvlCBgz7L6l2-DecKQLazoswqzf7DRYWOaCq4FtMGOR6D2Q/viewform?usp=header" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+
   <main class="contenedor">
-    <h1 class="titulo-categoria">JEANS DAMA</h1>
-    <div class="subcategorias"><a href="#bota-campana" class="boton-subcategoria">BOTA CAMPANA</a><a href="#camuflado" class="boton-subcategoria">CAMUFLADO</a><a href="#cargo" class="boton-subcategoria">CARGO</a><a href="#clasico" class="boton-subcategoria">CLASICO</a><a href="#palazzo" class="boton-subcategoria">PALAZZO</a><a href="#talla-plus-" class="boton-subcategoria">TALLA PLUS </a></div>
+    
+<h1 class="titulo-categoria">JEANS DAMA</h1>
+<div class="subcategorias"><a href="#bota-campana" class="boton-subcategoria">BOTA CAMPANA</a><a href="#camuflado" class="boton-subcategoria">CAMUFLADO</a><a href="#cargo" class="boton-subcategoria">CARGO</a><a href="#clasico" class="boton-subcategoria">CLASICO</a><a href="#palazzo" class="boton-subcategoria">PALAZZO</a><a href="#talla-plus-" class="boton-subcategoria">TALLA PLUS </a></div>
 <section id="bota-campana" class="bloque-subcategoria">
   <h2 class="titulo-subcategoria">BOTA CAMPANA</h2>
   <div class="grid-productos">
@@ -535,6 +545,11 @@
 </div></div></section>
   </main>
 
+  <footer class="footer">
+    <p>? ANMAGO Store ? Todos los derechos reservados</p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSevvlCBgz7L6l2-DecKQLazoswqzf7DRYWOaCq4FtMGOR6D2Q/viewform?usp=header">Deja tus datos</a></p>
+  </footer>
+
   <div id="modalImagen" class="modal" onclick="cerrarModal()">
     <img id="imagenModal" src="">
     <div class="cerrar-modal" onclick="cerrarModal()">X</div>
@@ -549,5 +564,6 @@
       document.getElementById('modalImagen').style.display = 'none';
     }
   </script>
+
 </body>
 </html>
