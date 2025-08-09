@@ -142,9 +142,10 @@ footer {
   height: auto;
   margin-left: 8px;
 }
-/* === CATÁLOGO GENERADO === */
-.categoria {
+/* === CATÁLOGO POR CATEGORÍA === */
+.contenedor-categoria {
   margin-bottom: 60px;
+  padding: 10px;
 }
 
 .titulo-categoria {
@@ -154,11 +155,16 @@ footer {
   padding: 10px;
   font-size: 24px;
   font-weight: bold;
+  border-radius: 6px;
 }
 
-.subcategorias {
+.subcategorias-menu {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .boton-subcategoria {
@@ -168,8 +174,6 @@ footer {
   border-radius: 6px;
   text-decoration: none;
   font-size: 13px;
-  margin: 0 5px;
-  display: inline-block;
   transition: background-color 0.3s ease;
 }
 
@@ -177,26 +181,26 @@ footer {
   background-color: #2a5a70;
 }
 
-.grid-productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
-  padding: 10px;
-}
-
-.subcategoria-titulo {
+.titulo-subcategoria {
   grid-column: 1 / -1;
   text-align: center;
   margin: 20px 0 10px;
 }
 
-.subcategoria-titulo h3 {
+.titulo-subcategoria h3 {
   background-color: #1B4557;
   color: white;
   padding: 6px 12px;
   font-size: 18px;
   border-radius: 6px;
   display: inline-block;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 10px;
 }
 
 .producto {
@@ -207,7 +211,7 @@ footer {
   background-color: white;
 }
 
-.imagen-container {
+.imagen-producto {
   cursor: pointer;
   width: 85%;
   max-width: 180px;
@@ -218,7 +222,7 @@ footer {
   background-color: white;
 }
 
-.imagen-container img {
+.imagen-producto img {
   width: 100%;
   height: 180px;
   object-fit: contain;
@@ -255,7 +259,7 @@ footer {
 }
 
 /* === MODAL DE IMAGEN === */
-.modal {
+.modal-imagen {
   display: none;
   position: fixed;
   top: 0; left: 0;
@@ -266,7 +270,7 @@ footer {
   align-items: center;
 }
 
-.modal img {
+.modal-imagen img {
   max-width: 85%;
   max-height: 85%;
   border-radius: 12px;
