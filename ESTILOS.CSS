@@ -95,6 +95,16 @@ nav ul.menu li:hover .submenu {
 .boton-vermas:hover {
   background-color: #426e83;
 }
+.titulo-subcategoria {
+  background-color: #1B4557;
+  color: white;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 
 /* === PIE DE PÁGINA === */
 footer {
