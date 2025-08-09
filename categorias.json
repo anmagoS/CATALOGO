@@ -1,1 +1,14 @@
-["JEANS DAMA","CHAQUETAS","ROPA DEPORTIVA"]
+[
+  {
+    "categoria": "JEANS DAMA",
+    "subcategorias": ["Bota Campana", "Camuflado", "Cargo", "Clásico", "Palazzo", "Talla Plus"]
+  },
+  {
+    "categoria": "BLUSAS",
+    "subcategorias": ["Casual", "Formal", "Crop Top"]
+  },
+  {
+    "categoria": "VESTIDOS",
+    "subcategorias": ["Cortos", "Largos", "Fiesta"]
+  }
+]
