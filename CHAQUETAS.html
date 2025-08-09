@@ -9,11 +9,20 @@
 </head>
 <body>
 
-  <header class="header">
-    <nav class="nav">
-      <a href="INICIO.HTML" class="nav-link">Inicio</a>
-      <a href="INICIO.HTML" class="nav-link">Cat?logo</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSevvlCBgz7L6l2-DecKQLazoswqzf7DRYWOaCq4FtMGOR6D2Q/viewform?usp=header" class="nav-link">Contacto</a>
+  <header>
+    <div class="logo">ANMAGO STORE</div>
+    <nav>
+      <ul class="menu">
+        <li><button onclick="cargarSeccion('INICIO.html')">Inicio</button></li>
+        <li>
+  <button onclick="toggleCatalogo()">Cat?logo</button>
+  <ul class="submenu" id="submenuCatalogo">
+    <!-- Se llenar? din?micamente -->
+  </ul>
+</li>
+
+        <li><button onclick="cargarSeccion('CONTACTO.html')">Contacto</button></li>
+      </ul>
     </nav>
   </header>
 
@@ -34,9 +43,16 @@
 </div></div></section>
   </main>
 
-  <footer class="footer">
-    <p>? ANMAGO Store ? Todos los derechos reservados</p>
-    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSevvlCBgz7L6l2-DecKQLazoswqzf7DRYWOaCq4FtMGOR6D2Q/viewform?usp=header">Deja tus datos</a></p>
+  <footer>
+    <div class="footer-links">
+      <a href="#">T?rminos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Ayuda</a>
+    </div>
+    <div class="medios-pago">
+      <h4>Medios de pago</h4>
+            <img src="https://ik.imagekit.io/mbsk9dati/pagos_procesados_por_epayco_370px.png?updatedAt=1754703963670" alt="Mastercard">
+    </div>
   </footer>
 
   <div id="modalImagen" class="modal" onclick="cerrarModal()">
