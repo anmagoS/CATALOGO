@@ -6,6 +6,31 @@ body {
 }
 
 /* === HEADER Y NAVEGACIÓN === */
+.header {
+  background-color: #1B4557;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #163544;
+}
 header {
   background-color: #1B4557;
   color: white;
