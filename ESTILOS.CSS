@@ -293,11 +293,12 @@ footer {
 
 /* === RESPONSIVE PARA MÓVILES === */
 @media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
+}
+
 
   nav ul.menu {
     flex-direction: column;
