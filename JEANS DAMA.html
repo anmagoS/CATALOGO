@@ -975,6 +975,20 @@
       <img src="https://ik.imagekit.io/mbsk9dati/pagos_procesados_por_epayco_370px.png?updatedAt=1754703963670" alt="Medios de pago">
     </div>
   </footer>
+<script>
+  document.querySelectorAll('.boton-subcategoria').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').split('#')[1];
+      const target = document.getElementById(targetId);
+      if (target) {
+        const offset = -80; // ajusta según altura del header
+        const top = target.getBoundingClientRect().top + window.scrollY + offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
 
   <script>
     function mostrarModal(src) {
