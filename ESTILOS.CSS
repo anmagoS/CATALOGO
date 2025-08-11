@@ -7,31 +7,81 @@ body {
   box-sizing: border-box;
 }
 
-/* === HEADER Y NAVEGACIÓN === */ .header { background-color: #1B4557; padding: 10px 0; text-align: center; } .nav { display: flex; justify-content: center; gap: 20px; } .nav-link { color: white; text-decoration: none; font-weight: bold; font-size: 14px; padding: 6px 12px; border-radius: 6px; transition: background-color 0.3s; } .nav-link:hover { background-color: #163544; } .dropdown { position: relative; display: inline-block; } .dropdown-toggle { cursor: pointer; background: none; border: none; color: white; font-weight: bold; font-size: 16px; } .dropdown-menu { display: none; position: absolute; background-color: #1B4557; min-width: 160px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; border-radius: 6px; } .dropdown-item { color: white; padding: 10px 16px; text-decoration: none; display: block; font-size: 14px; } .dropdown-item:hover { background-color: #163544; } .dropdown:hover .dropdown-menu { display: block; } .header { background-color: #1B4557; color: white; padding: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; } .logo { font-size: 24px; font-weight: bold; } nav ul.menu { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 12px; } nav ul.menu li { position: relative; } nav ul.menu button { background-color: #1B4557; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; transition: background-color 0.3s; } nav ul.menu button:hover { background-color: #2a5a70; } /* === SUBMENÚ DESPLEGABLE === */ nav ul.submenu { display: none; position: absolute; top: 36px; left: 0; background-color: white; color: #1B4557; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 1000; min-width: 160px; } nav ul.submenu li a { display: block; padding: 8px 12px; text-decoration: none; color: #1B4557; font-size: 13px; } nav ul.submenu li a:hover { background-color: #f0f0f0; } nav ul.menu li:hover .submenu { display: block; } .titulo-subcategoria { background-color: #1B4557; color: white; padding: 6px 12px; font-size: 18px; border-radius: 6px; display: inline-block; margin-bottom: 10px; }
-/* === RESPONSIVE PARA MÓVILES === */
-@media (max-width: 600px) {
-  nav ul.menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  nav ul.submenu {
-    position: static;
-    box-shadow: none;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-  }
-
-  nav ul.submenu li a {
-    padding: 10px;
-    font-size: 14px;
-  }
+/* === HEADER Y NAVEGACIÓN === */
+.header {
+  background-color: #1B4557;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-/* === SUBCATEGORÍAS === */
+nav ul.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav ul.menu li {
+  position: relative;
+}
+
+nav ul.menu button {
+  background-color: #1B4557;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+nav ul.menu button:hover {
+  background-color: #2a5a70;
+}
+
+/* === SUBMENÚ DESPLEGABLE === */
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  background-color: white;
+  color: #1B4557;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  min-width: 160px;
+}
+
+nav ul.submenu li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #1B4557;
+  font-size: 13px;
+}
+
+nav ul.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+nav ul.menu li:hover .submenu {
+  display: block;
+}
+
+/* === BOTONES DE SUBCATEGORÍAS (ANCLA) === */
 .subcategorias-menu {
   text-align: center;
   margin: 20px 0;
@@ -42,17 +92,18 @@ body {
 }
 
 .boton-subcategoria {
-  padding: 6px 12px;
+  padding: 8px 14px;
   background-color: #1B4557;
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  font-size: 13px;
-  transition: background-color 0.3s ease;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .boton-subcategoria:hover {
   background-color: #2a5a70;
+  transform: scale(1.05);
 }
 
 /* === CATÁLOGO POR CATEGORÍA === */
@@ -256,6 +307,32 @@ footer {
     gap: 6px;
   }
 
+  nav ul.submenu {
+    position: static;
+    box-shadow: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+  }
+
+  nav ul.submenu li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .subcategorias-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+  }
+
+  .boton-subcategoria {
+    width: 90%;
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+
   .grid-productos {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -278,6 +355,3 @@ footer {
 
   .medios-pago img {
     max-height: 60px;
-    margin: 6px;
-  }
-}
