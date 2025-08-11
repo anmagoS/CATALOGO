@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ANMAGO STORE</title>
+  <title>VARIOS | ANMAGO STORE</title>
   <link rel="stylesheet" href="ESTILOS.CSS" />
 </head>
 <body>
@@ -24,14 +24,18 @@
     </nav>
   </header>
 
-  <div style="margin-bottom:60px;">
-    <h1 style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:24px; font-weight:bold;">VARIOS</h1>
+  <main style="margin-bottom:60px;">
+    <h1 style="text-align:center; background-color:#1B4557; color:white; padding:12px; font-size:26px; font-weight:bold;">VARIOS</h1>
 
-    <h2 style="text-align:center; color:#1B4557; margin-top:30px;">VARIOS1</h2>
+    <div style="text-align:center; margin:20px 0;">
+<a href="#VARIOS1" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">VARIOS1</a>
+    </div>
+
+    <h2 id="VARIOS1" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">VARIOS1</h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
     </div>
 
-  <div id="modalImagen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;" onclick="cerrarModal()">
+  <div id="modalImagen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
     <img id="imagenModal" src="" style="max-width:85%; max-height:85%; border-radius:12px; box-shadow:0 0 20px rgba(0,0,0,0.5);">
     <div style="position:absolute; top:20px; right:20px; font-size:28px; color:white; cursor:pointer;" onclick="cerrarModal()">X</div>
   </div>
@@ -50,13 +54,16 @@
 
   <script>
     function mostrarModal(src) {
-      document.getElementById('imagenModal').src = src;
-      document.getElementById('modalImagen').style.display = 'flex';
+      const modal = document.getElementById('modalImagen');
+      const img = document.getElementById('imagenModal');
+      img.src = src;
+      modal.style.display = 'flex';
     }
     function cerrarModal() {
       document.getElementById('modalImagen').style.display = 'none';
     }
   </script>
 
+</main>
 </body>
 </html>
