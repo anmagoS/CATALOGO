@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ANMAGO STORE</title>
+  <title>JEANS DAMA | ANMAGO STORE</title>
   <link rel="stylesheet" href="ESTILOS.CSS" />
 </head>
 <body>
@@ -24,34 +24,43 @@
     </nav>
   </header>
 
-  <div style="margin-bottom:60px;">
-    <h1 style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:24px; font-weight:bold;">JEANS DAMA</h1>
+  <main style="margin-bottom:60px;">
+    <h1 style="text-align:center; background-color:#1B4557; color:white; padding:12px; font-size:26px; font-weight:bold;">JEANS DAMA</h1>
 
-    <h2 style="text-align:center; color:#1B4557; margin-top:30px;">CARGO</h2>
+    <div style="text-align:center; margin:20px 0;">
+<a href="#CARGO" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">CARGO</a>
+<a href="#PALAZZO" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">PALAZZO</a>
+<a href="#CAMUFLADO" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">CAMUFLADO</a>
+<a href="#CLASICO" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">CLASICO</a>
+<a href="#BOTA_CAMPANA" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">BOTA CAMPANA</a>
+<a href="#TALLA_PLUS_" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">TALLA PLUS </a>
+    </div>
+
+    <h2 id="CARGO" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">CARGO</h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
     </div>
 
-    <h2 style="text-align:center; color:#1B4557; margin-top:30px;">PALAZZO</h2>
+    <h2 id="PALAZZO" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">PALAZZO</h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
     </div>
 
-    <h2 style="text-align:center; color:#1B4557; margin-top:30px;">CAMUFLADO</h2>
+    <h2 id="CAMUFLADO" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">CAMUFLADO</h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
     </div>
 
-    <h2 style="text-align:center; color:#1B4557; margin-top:30px;">CLASICO</h2>
+    <h2 id="CLASICO" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">CLASICO</h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
     </div>
 
-    <h2 style="text-align:center; color:#1B4557; margin-top:30px;">BOTA CAMPANA</h2>
+    <h2 id="BOTA_CAMPANA" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">BOTA CAMPANA</h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
     </div>
 
-    <h2 style="text-align:center; color:#1B4557; margin-top:30px;">TALLA PLUS </h2>
+    <h2 id="TALLA_PLUS_" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">TALLA PLUS </h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
     </div>
 
-  <div id="modalImagen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;" onclick="cerrarModal()">
+  <div id="modalImagen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
     <img id="imagenModal" src="" style="max-width:85%; max-height:85%; border-radius:12px; box-shadow:0 0 20px rgba(0,0,0,0.5);">
     <div style="position:absolute; top:20px; right:20px; font-size:28px; color:white; cursor:pointer;" onclick="cerrarModal()">X</div>
   </div>
@@ -70,13 +79,16 @@
 
   <script>
     function mostrarModal(src) {
-      document.getElementById('imagenModal').src = src;
-      document.getElementById('modalImagen').style.display = 'flex';
+      const modal = document.getElementById('modalImagen');
+      const img = document.getElementById('imagenModal');
+      img.src = src;
+      modal.style.display = 'flex';
     }
     function cerrarModal() {
       document.getElementById('modalImagen').style.display = 'none';
     }
   </script>
 
+</main>
 </body>
 </html>
