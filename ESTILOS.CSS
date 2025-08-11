@@ -293,18 +293,16 @@ footer {
 
 /* === RESPONSIVE PARA MÓVILES === */
 @media (max-width: 600px) {
-  body {
-    padding: 0 8px;
-  }
-
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   nav ul.menu {
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
+    align-items: center;
   }
 
   nav ul.submenu {
@@ -314,6 +312,8 @@ footer {
     border: 1px solid #ccc;
     margin-top: 6px;
   }
+}
+
 
   nav ul.submenu li a {
     padding: 10px;
