@@ -1,6 +1,13 @@
-/* ...existing code... */
+/* === BASE === */
+body {
+  margin: 0;
+  padding: 80px 12px 0 12px; /* Espacio para el header fijo */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
 
-// HEADER FIJO
+/* === HEADER Y NAVEGACIÓN === */
 .header {
   background-color: #1B4557;
   color: white;
@@ -10,23 +17,356 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  position: fixed;      /* <-- NUEVO */
-  width: 100%;          /* <-- NUEVO */
-  top: 0;               /* <-- NUEVO */
-  left: 0;              /* <-- NUEVO */
-  z-index: 1000;        /* <-- NUEVO */
+  position: fixed;      /* Header fijo */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-/* Espacio para el header fijo */
-body {
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* === NAVEGACIÓN PRINCIPAL === */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #163544;
+}
+
+/* === DROPDOWN === */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1B4557;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdown-item {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #163544;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* === MENÚ PRINCIPAL === */
+nav ul.menu {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  padding: 80px 12px 0 12px; /* <-- Cambiado: padding-top para que el contenido no quede debajo del header */
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-/* ...existing code... */
+nav ul.menu li {
+  position: relative;
+}
+
+nav ul.menu button {
+  background-color: #1B4557;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+nav ul.menu button:hover {
+  background-color: #2a5a70;
+}
+
+/* === SUBMENÚ DESPLEGABLE === */
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  background-color: white;
+  color: #1B4557;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  min-width: 160px;
+}
+
+nav ul.submenu li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #1B4557;
+  font-size: 13px;
+}
+
+nav ul.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+nav ul.menu li:hover .submenu {
+  display: block;
+}
+
+/* === TÍTULO SUBCATEGORÍA === */
+.titulo-subcategoria {
+  background-color: #1B4557;
+  color: white;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.titulo-subcategoria h3 {
+  background-color: #1B4557;
+  color: white;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* === BOTONES DE SUBCATEGORÍAS (ANCLA) === */
+.subcategorias-menu {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.boton-subcategoria {
+  padding: 8px 14px;
+  background-color: #1B4557;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.boton-subcategoria:hover {
+  background-color: #2a5a70;
+  transform: scale(1.05);
+}
+
+/* === CATÁLOGO POR CATEGORÍA === */
+.contenedor-categoria {
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+.titulo-categoria {
+  text-align: center;
+  background-color: #1B4557;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* === GRID DE PRODUCTOS === */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 10px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.imagen-producto {
+  cursor: pointer;
+  width: 85%;
+  max-width: 180px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.imagen-producto img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.nombre-producto {
+  font-weight: bold;
+  color: #1B4557;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.precio-producto {
+  font-size: 15px;
+  color: #1B4557;
+  font-weight: bold;
+}
+
+.boton-comprar {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #1B4557;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+  background-color: #2a5a70;
+}
+
+/* === BOTÓN VER MÁS === */
+.boton-vermas {
+  display: inline-block;
+  background-color: #1b4557;
+  color: #f0f0f0;
+  padding: 8px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+.boton-vermas:hover {
+  background-color: #426e83;
+}
+
+/* === MODAL DE IMAGEN === */
+.modal-imagen {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-imagen img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+  width: 100%;
+  background-color: #1B4557;
+  color: white;
+  padding: 24px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f0f0f0;
+}
+
+.medios-pago {
+  text-align: right;
+}
+
+.medios-pago h4 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.medios-pago img {
+  max-height: 50px;
+  height: auto;
+  margin-left: 8px;
+}
 
 /* === RESPONSIVE PARA MÓVILES === */
 @media (max-width: 600px) {
@@ -34,11 +374,15 @@ body {
     flex-direction: column;
     padding: 12px 6px;
     text-align: center;
-    position: fixed;      /* <-- Asegura que siga fijo en móviles */
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+  }
+
+  body {
+    padding-top: 80px; /* Espacio para el header fijo en móviles */
   }
 
   .nav {
@@ -70,24 +414,26 @@ body {
     font-size: 14px;
   }
 
+  /* BOTONES DE SUBCATEGORÍAS EN DOS COLUMNAS Y MÁS PEQUEÑOS */
   .subcategorias-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
     margin: 16px 0;
     width: 100%;
+    text-align: center;
   }
 
   .boton-subcategoria {
-    width: 95%;
-    font-size: 16px;
-    padding: 12px 0;
+    width: 90%;
+    font-size: 13px;
+    padding: 8px 0;
     margin: 0 auto;
   }
 
-  /* GRID DE DOS COLUMNAS EN MÓVILES */
+  /* GRID DE PRODUCTOS EN DOS COLUMNAS */
   .grid-productos {
-    grid-template-columns: repeat(2, 1fr); /* <-- Cambiado: dos columnas en móviles */
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
