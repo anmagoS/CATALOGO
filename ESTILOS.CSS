@@ -1,17 +1,30 @@
 /* === BASE === */
-body {
-  margin: 0;
-  padding: 60px 12px 0 12px; /* Igual al alto del header */
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+/* === NORMALIZACIÓN GLOBAL === */
+* {
   box-sizing: border-box;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 60px 12px 0 12px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  /* box-sizing: border-box; ← quítalo de aquí */
+}
+
 
 /* === HEADER Y NAVEGACIÓN === */
 .header {
   background-color: #1B4557;
   color: white;
-  padding: 0 20px;
+  padding: 0 12px;
   height: 60px;
   display: flex;
   flex-wrap: nowrap;
