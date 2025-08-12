@@ -9,150 +9,156 @@ body {
 
 /* === HEADER Y NAVEGACIÓN === */
 .header {
-    background-color: #1B4557;
-    color: white;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  background-color: #1B4557;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* === NAVEGACIÓN PRINCIPAL === */
 .nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: background-color 0.3s;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
 }
 
 .nav-link:hover {
-    background-color: #163544;
+  background-color: #163544;
 }
 
 /* === DROPDOWN === */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-toggle {
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #1B4557;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 6px;
+  display: none;
+  position: absolute;
+  background-color: #1B4557;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
 }
 
 .dropdown-item {
-    color: white;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
 }
 
 .dropdown-item:hover {
-    background-color: #163544;
+  background-color: #163544;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 /* === MENÚ PRINCIPAL === */
 nav ul.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 nav ul.menu li {
-    position: relative;
+  position: relative;
 }
 
 nav ul.menu button {
-    background-color: #1B4557;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
+  background-color: #1B4557;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
 }
 
 nav ul.menu button:hover {
-    background-color: #2a5a70;
+  background-color: #2a5a70;
 }
 
 /* === SUBMENÚ DESPLEGABLE === */
 nav ul.submenu {
-    display: none;
-    position: absolute;
-    top: 36px;
-    left: 0;
-    background-color: white;
-    color: #1B4557;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    z-index: 1000;
-    min-width: 160px;
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  background-color: white;
+  color: #1B4557;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  min-width: 160px;
 }
 
 nav ul.submenu li a {
-    display: block;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #1B4557;
-    font-size: 13px;
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #1B4557;
+  font-size: 13px;
 }
 
 nav ul.submenu li a:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 nav ul.menu li:hover .submenu {
-    display: block;
+  display: block;
 }
 
 /* === TÍTULO SUBCATEGORÍA === */
 .titulo-subcategoria {
-    background-color: #1B4557;
-    color: white;
-    padding: 6px 12px;
-    font-size: 18px;
-    border-radius: 6px;
-    display: inline-
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.titulo-subcategoria h3 {
+  background-color: #1B4557;
+  color: white;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  display: inline-block;
+}
 
 /* === BOTONES DE SUBCATEGORÍAS (ANCLA) === */
 .subcategorias-menu {
@@ -165,13 +171,15 @@ nav ul.menu li:hover .submenu {
 }
 
 .boton-subcategoria {
-  padding: 8px 14px;
+  padding: 10px 18px;
   background-color: #1B4557;
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  font-size: 14px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(27,69,87,0.08);
 }
 
 .boton-subcategoria:hover {
@@ -193,20 +201,6 @@ nav ul.menu li:hover .submenu {
   font-size: 24px;
   font-weight: bold;
   border-radius: 6px;
-}
-
-.titulo-subcategoria {
-  text-align: center;
-  margin: 20px 0 10px;
-}
-
-.titulo-subcategoria h3 {
-  background-color: #1B4557;
-  color: white;
-  padding: 6px 12px;
-  font-size: 18px;
-  border-radius: 6px;
-  display: inline-block;
 }
 
 /* === GRID DE PRODUCTOS === */
@@ -266,7 +260,7 @@ nav ul.menu li:hover .submenu {
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .boton-comprar:hover {
@@ -283,7 +277,7 @@ nav ul.menu li:hover .submenu {
   text-decoration: none;
   font-weight: bold;
   margin-top: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .boton-vermas:hover {
@@ -341,7 +335,7 @@ footer {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 .footer-links a:hover {
@@ -366,17 +360,24 @@ footer {
 
 /* === RESPONSIVE PARA MÓVILES === */
 @media (max-width: 600px) {
-  .grid-productos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  .header {
+    flex-direction: column;
+    padding: 12px 6px;
+    text-align: center;
   }
-}
 
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
 
   nav ul.menu {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    width: 100%;
   }
 
   nav ul.submenu {
@@ -385,9 +386,9 @@ footer {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     margin-top: 6px;
+    min-width: 0;
+    width: 90%;
   }
-}
-
 
   nav ul.submenu li a {
     padding: 10px;
@@ -399,17 +400,24 @@ footer {
     align-items: center;
     gap: 10px;
     margin: 16px 0;
+    width: 100%;
   }
 
   .boton-subcategoria {
-    width: 90%;
-    font-size: 15px;
-    padding: 10px 16px;
+    width: 95%;
+    font-size: 16px;
+    padding: 12px 0;
+    margin: 0 auto;
   }
 
   .grid-productos {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .producto {
+    max-width: 98vw;
+    margin: 0 auto;
   }
 
   footer {
@@ -425,6 +433,7 @@ footer {
 
   .footer-links {
     justify-content: center;
+    width: 100%;
   }
 
   .medios-pago img {
