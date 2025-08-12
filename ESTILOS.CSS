@@ -11,8 +11,8 @@ body {
 .header {
   background-color: #1B4557;
   color: white;
-  padding: 0 16px;
-  height: 64px; /* Alto fijo */
+  padding: 0 20px;
+  height: 60px; /* Alto fijo */
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -20,7 +20,7 @@ body {
   text-align: left;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 3;
   left: 0;
   z-index: 1000;
 }
