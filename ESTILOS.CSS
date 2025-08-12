@@ -1,7 +1,7 @@
 /* === BASE === */
 body {
   margin: 0;
-  padding: 64px 12px 0 12px; /* Espacio para el header fijo */
+  padding: 60px 12px 0 12px; /* Ajusta el padding-top igual al alto del header */
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
   text-align: left;
   position: fixed;
   width: 100%;
-  top: 3;
+  top: 0; /* Corregido: era top: 3; */
   left: 0;
   z-index: 1000;
 }
@@ -387,13 +387,13 @@ footer {
   }
 
   .logo {
-    order: 2; /* Logo a la derecha */
+    order: 2;
     font-size: 20px;
     margin-left: 12px;
   }
 
   .nav {
-    order: 1; /* Menú a la izquierda */
+    order: 1;
     flex-direction: row;
     gap: 8px;
     align-items: center;
@@ -402,7 +402,7 @@ footer {
   }
 
   body {
-    padding-top: 56px; /* Espacio para el header fijo en móvil */
+    padding-top: 56px; /* Ajusta el padding-top igual al alto del header en móvil */
   }
 
   nav ul.menu {
