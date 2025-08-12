@@ -1,7 +1,7 @@
 /* === BASE === */
 body {
   margin: 0;
-  padding: 60px 12px 0 12px; /* Ajusta el padding-top igual al alto del header */
+  padding: 60px 12px 0 12px; /* Igual al alto del header */
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   box-sizing: border-box;
@@ -12,15 +12,14 @@ body {
   background-color: #1B4557;
   color: white;
   padding: 0 20px;
-  height: 60px; /* Alto fijo */
+  height: 60px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  text-align: left;
   position: fixed;
   width: 100%;
-  top: 0; /* Corregido: era top: 3; */
+  top: 0;
   left: 0;
   z-index: 1000;
 }
@@ -373,61 +372,19 @@ footer {
 /* === RESPONSIVE PARA MÓVILES === */
 @media (max-width: 600px) {
   .header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8px;
     height: 56px;
-    text-align: left;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    padding: 0 8px;
   }
-
-  .logo {
-    order: 2;
-    font-size: 20px;
-    margin-left: 12px;
-  }
-
-  .nav {
-    order: 1;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    width: auto;
-    margin-right: auto;
-  }
-
   body {
-    padding-top: 56px; /* Ajusta el padding-top igual al alto del header en móvil */
+    padding-top: 56px;
   }
-
-  nav ul.menu {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    width: 100%;
+  .descripcion-producto {
+    font-size: 12px;
   }
-
-  nav ul.submenu {
-    position: static;
-    box-shadow: none;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    min-width: 0;
-    width: 90%;
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
-
-  nav ul.submenu li a {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  /* Botones de subcategoría en dos columnas y más pequeños */
   .subcategorias-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -436,43 +393,10 @@ footer {
     width: 100%;
     text-align: center;
   }
-
   .boton-subcategoria {
     width: 90%;
     font-size: 13px;
     padding: 8px 0;
     margin: 0 auto;
-  }
-
-  /* Grid de productos en dos columnas */
-  .grid-productos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
-  .producto {
-    max-width: 98vw;
-    margin: 0 auto;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 12px;
-  }
-
-  .medios-pago {
-    text-align: center;
-    margin-top: 15px;
-  }
-
-  .footer-links {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .medios-pago img {
-    max-height: 60px;
-    margin: 6px;
   }
 }
