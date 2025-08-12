@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ROPA DEPORTIVA | ANMAGO STORE</title>
   <link rel="stylesheet" href="ESTILOS.CSS" />
 </head>
@@ -25,14 +24,14 @@
   </header>
 
   <main style="margin-bottom:60px;">
-    <h1 style="text-align:center; background-color:#1B4557; color:white; padding:12px; font-size:26px; font-weight:bold;">ROPA DEPORTIVA</h1>
+    <h1 class="titulo-categoria">ROPA DEPORTIVA</h1>
 
-    <div style="text-align:center; margin:20px 0;">
-<a href="#DAMA" style="margin:6px; padding:8px 16px; background-color:#1B4557; color:white; border-radius:6px; text-decoration:none; font-size:14px;">DAMA</a>
+    <div class="subcategorias-menu">
+<a href="#DAMA" class="boton-subcategoria">DAMA</a>
     </div>
 
-    <h2 id="DAMA" style="text-align:center; background-color:#1B4557; color:white; padding:10px; font-size:20px; font-weight:bold; margin-top:40px;">DAMA</h2>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
+    <h2 id="DAMA" class="titulo-subcategoria">DAMA</h2>
+    <div class="grid-productos">
 
 <div style="border:1px solid #ccc; border-radius:8px; padding:10px; text-align:center; width:180px;">
   <div onclick="mostrarModal('https://ik.imagekit.io/mbsk9dati/ROPA%20DEPORTIVA/c3b2d33e-1f89-48c0-b273-3a7e9cafd1d7.jpg?updatedAt=1754688414035')" style="cursor:pointer;">
@@ -77,9 +76,9 @@
 </div>
     </div>
 
-  <div id="modalImagen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
-    <img id="imagenModal" src="" style="max-width:85%; max-height:85%; border-radius:12px; box-shadow:0 0 20px rgba(0,0,0,0.5);">
-    <div style="position:absolute; top:20px; right:20px; font-size:28px; color:white; cursor:pointer;" onclick="cerrarModal()">X</div>
+  <div id="modalImagen" class="modal-imagen">
+    <img id="imagenModal" src="">
+    <div class="cerrar-modal" onclick="cerrarModal()">X</div>
   </div>
 
   <footer>
