@@ -1,7 +1,7 @@
 /* === BASE === */
 body {
   margin: 0;
-  padding: 80px 12px 0 12px; /* Espacio para el header fijo */
+  padding: 64px 12px 0 12px; /* Espacio para el header fijo */
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   box-sizing: border-box;
@@ -11,13 +11,14 @@ body {
 .header {
   background-color: #1B4557;
   color: white;
-  padding: 16px;
+  padding: 0 16px;
+  height: 64px; /* Alto fijo */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  position: fixed;      /* Header fijo */
+  text-align: left;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -27,12 +28,13 @@ body {
 .logo {
   font-size: 24px;
   font-weight: bold;
+  margin-left: 12px;
 }
 
 /* === NAVEGACIÓN PRINCIPAL === */
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 
@@ -374,7 +376,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 6px;
+    padding: 0 8px;
+    height: 56px;
     text-align: left;
     position: fixed;
     width: 100%;
@@ -384,18 +387,22 @@ footer {
   }
 
   .logo {
-    order: 2; /* Mueve el logo a la derecha */
+    order: 2; /* Logo a la derecha */
     font-size: 20px;
     margin-left: 12px;
   }
 
   .nav {
-    order: 1; /* Mueve el menú a la izquierda */
+    order: 1; /* Menú a la izquierda */
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
     width: auto;
     margin-right: auto;
+  }
+
+  body {
+    padding-top: 56px; /* Espacio para el header fijo en móvil */
   }
 
   nav ul.menu {
@@ -446,10 +453,6 @@ footer {
   .producto {
     max-width: 98vw;
     margin: 0 auto;
-  }
-
-  body {
-    padding-top: 80px;
   }
 
   footer {
