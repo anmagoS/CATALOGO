@@ -371,9 +371,11 @@ footer {
 /* === RESPONSIVE PARA MÓVILES === */
 @media (max-width: 600px) {
   .header {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 12px 6px;
-    text-align: center;
+    text-align: left;
     position: fixed;
     width: 100%;
     top: 0;
@@ -381,21 +383,25 @@ footer {
     z-index: 1000;
   }
 
-  body {
-    padding-top: 80px; /* Espacio para el header fijo en móviles */
+  .logo {
+    order: 2; /* Mueve el logo a la derecha */
+    font-size: 20px;
+    margin-left: 12px;
   }
 
   .nav {
-    flex-direction: column;
+    order: 1; /* Mueve el menú a la izquierda */
+    flex-direction: row;
     gap: 10px;
     align-items: center;
-    width: 100%;
+    width: auto;
+    margin-right: auto;
   }
 
   nav ul.menu {
     flex-direction: column;
     gap: 10px;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
   }
 
@@ -414,7 +420,7 @@ footer {
     font-size: 14px;
   }
 
-  /* BOTONES DE SUBCATEGORÍAS EN DOS COLUMNAS Y MÁS PEQUEÑOS */
+  /* Botones de subcategoría en dos columnas y más pequeños */
   .subcategorias-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -431,7 +437,7 @@ footer {
     margin: 0 auto;
   }
 
-  /* GRID DE PRODUCTOS EN DOS COLUMNAS */
+  /* Grid de productos en dos columnas */
   .grid-productos {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -440,6 +446,10 @@ footer {
   .producto {
     max-width: 98vw;
     margin: 0 auto;
+  }
+
+  body {
+    padding-top: 80px;
   }
 
   footer {
