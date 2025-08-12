@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JEANS DAMA | ANMAGO STORE</title>
   <link rel="stylesheet" href="ESTILOS.CSS" />
 </head>
@@ -975,20 +976,6 @@
       <img src="https://ik.imagekit.io/mbsk9dati/pagos_procesados_por_epayco_370px.png?updatedAt=1754703963670" alt="Medios de pago">
     </div>
   </footer>
-<script>
-  document.querySelectorAll('.boton-subcategoria').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').split('#')[1];
-      const target = document.getElementById(targetId);
-      if (target) {
-        const offset = -80; // ajusta según altura del header
-        const top = target.getBoundingClientRect().top + window.scrollY + offset;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
-    });
-  });
-</script>
 
   <script>
     function mostrarModal(src) {
