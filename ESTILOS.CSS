@@ -266,19 +266,20 @@ nav ul.menu li:hover .submenu {
   font-weight: roboto;
   color: #1B4557;
   margin-top: 8px;
-  font-size: 6px;
+  font-size: 10px;
 }
+
 .descripcion-producto {
   font-weight: roboto;
   color: #1B4557;
   margin-top: 8px;
-  font-size: 4px;
+  font-size: 8px;
 }
 
 .precio-producto {
   font-size: 15px;
   color: #1B4557;
-  font-weight: bold;
+  font-weight: roboto;
 }
 
 .boton-comprar {
@@ -305,7 +306,7 @@ nav ul.menu li:hover .submenu {
   padding: 8px 18px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: roboto;
   margin-top: 8px;
   transition: background-color 0.3s;
 }
