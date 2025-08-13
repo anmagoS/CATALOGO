@@ -270,13 +270,14 @@ nav ul.menu li:hover .submenu {
 }
 
 .descripcion-producto {
-  font-weight: bold;
+  font-weight: normal;
   color: #1B4557;
   margin-top: 8px;
   font-size: 11px;
 }
 
 .precio-producto {
+  margin-top: 8px;
   font-size: 14px;
   color: #1B4557;
   font-weight: bold;
