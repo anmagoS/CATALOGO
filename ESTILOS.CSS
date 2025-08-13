@@ -329,9 +329,9 @@ nav ul.menu li:hover .submenu {
 }
 
 .modal-imagen img {
-  max-width: 85%;
-  max-height: 85%;
-  border-radius: 12px;
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
