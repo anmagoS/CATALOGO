@@ -14,7 +14,7 @@ html, body {
 body {
   margin: 0;
   padding: 60px 12px 0 12px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f9f9f9;
   /* box-sizing: border-box; ← quítalo de aquí */
 }
@@ -263,14 +263,14 @@ nav ul.menu li:hover .submenu {
 }
 
 .nombre-producto {
-  font-weight: roboto;
+  font-weight: bold;
   color: #1B4557;
   margin-top: 8px;
   font-size: 13px;
 }
 
 .descripcion-producto {
-  font-weight: roboto;
+  font-weight: bold;
   color: #1B4557;
   margin-top: 8px;
   font-size: 11px;
@@ -279,7 +279,7 @@ nav ul.menu li:hover .submenu {
 .precio-producto {
   font-size: 14px;
   color: #1B4557;
-  font-weight: roboto;
+  font-weight: bold;
 }
 
 .boton-comprar {
