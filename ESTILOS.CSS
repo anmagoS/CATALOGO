@@ -263,10 +263,10 @@ nav ul.menu li:hover .submenu {
 }
 
 .nombre-producto {
-  font-weight: bold;
+  font-weight: roboto;
   color: #1B4557;
   margin-top: 8px;
-  font-size: 8px;
+  font-size: 6px;
 }
 
 .precio-producto {
