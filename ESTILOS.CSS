@@ -270,7 +270,7 @@ nav ul.menu li:hover .submenu {
 }
 
 .descripcion-producto {
-  font-weight: normal;
+  font-weight: bold;
   color: #1B4557;
   margin-top: 8px;
   font-size: 11px;
