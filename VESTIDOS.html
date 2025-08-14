@@ -37,25 +37,27 @@
     <div class="grid-productos">
 
 <div class="producto">
-  <div class="imagen-producto" onclick="mostrarModal('https://ik.imagekit.io/mbsk9dati/producto_105_1raJaLWau')">
-    <img src="https://ik.imagekit.io/mbsk9dati/producto_105_1raJaLWau" alt="IRENE">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_C9E8EEF3')">
+    <img src="https://ik.imagekit.io/mbsk9dati/producto_105/producto_105_img6_AHwuhe9R6" alt="IRENE">
   </div>
   <div class="nombre-producto">IRENE</div>
   <div class="descripcion-producto">TELA RIB</div>
 <div class="descripcion-producto">TALLA UNICA</div>
 
   <div class="precio-producto">$55000 COP</div>
-  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20VESTIDOS%20RIB%20IRENE.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2Fproducto_105_1raJaLWau" target="_blank" class="boton-comprar">
-    COMPRAR
-  </a>
+  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20VESTIDOS%20RIB%20IRENE.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2Fproducto_105_1raJaLWau" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_C9E8EEF3" class="modal-imagen">
+  <div class="galeria-modal">
+    <img src="https://ik.imagekit.io/mbsk9dati/producto_105/producto_105_img6_AHwuhe9R6" alt="IRENE" class="imagen-modal">
+  </div>
+  <div class="cerrar-modal" onclick="cerrarGaleria('modal_C9E8EEF3')">X</div>
 </div>
     </div>
 
-  <div id="modalImagen" class="modal-imagen">
-    <img id="imagenModal" src="">
-    <div class="cerrar-modal" onclick="cerrarModal()">X</div>
-  </div>
-  <footer>
+    <footer>
     <div class="footer-links">
       <a href="#">Nosotros</a>
       <a href="#">Privacidad</a>
@@ -67,16 +69,13 @@
     </div>
   </footer>
   <script>
-    function mostrarModal(src) {
-      const modal = document.getElementById('modalImagen');
-      const img = document.getElementById('imagenModal');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function cerrarModal() {
-      document.getElementById('modalImagen').style.display = 'none';
-    }
-  </script>
+  function abrirGaleria(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function cerrarGaleria(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
 </main>
 </body>
 </html>
