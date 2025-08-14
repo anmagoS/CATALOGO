@@ -46,17 +46,15 @@ body {
   max-height: 80vh;
   overflow-y: auto;
 }
-
 .imagen-modal {
-  width: 40%;
+  width: 120px;
   height: auto;
-  max-width: 160px;
   border-radius: 8px;
   object-fit: contain;
-  cursor: pointer;
+  margin: 8px;
   transition: transform 0.3s;
+  cursor: pointer;
 }
-
 
 .imagen-modal:hover {
   transform: scale(1.05);
