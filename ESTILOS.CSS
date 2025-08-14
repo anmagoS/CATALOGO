@@ -268,7 +268,7 @@ nav ul.menu li:hover .submenu {
 
 .imagen-producto {
   cursor: pointer;
-  width: 85%;
+  width: 100%;
   max-width: 180px;
   aspect-ratio: 1/1;
   overflow: hidden;
