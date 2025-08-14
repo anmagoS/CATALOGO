@@ -48,13 +48,15 @@ body {
 }
 
 .imagen-modal {
-  max-width: 180px;
-  max-height: 180px;
+  width: 40%;
+  height: auto;
+  max-width: 160px;
   border-radius: 8px;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s;
 }
+
 
 .imagen-modal:hover {
   transform: scale(1.05);
@@ -444,3 +446,24 @@ footer {
     margin: 0 auto;
   }
 }
+@media (max-width: 600px) {
+  .imagen-modal {
+    width: 80%;
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .imagen-modal {
+    width: 50%;
+    max-width: 140px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .imagen-modal {
+    width: 40%;
+    max-width: 160px;
+  }
+}
+
