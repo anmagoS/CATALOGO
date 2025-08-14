@@ -36,6 +36,29 @@ body {
   left: 0;
   z-index: 995;
 }
+.galeria-modal {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.imagen-modal {
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 8px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.imagen-modal:hover {
+  transform: scale(1.05);
+}
 
 .logo {
   font-size: 24px;
