@@ -37,23 +37,25 @@
     <div class="grid-productos">
 
 <div class="producto">
-  <div class="imagen-producto" onclick="mostrarModal('https://ik.imagekit.io/mbsk9dati/BELLEZA/img_123.png')">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_BEBC1FE')">
     <img src="https://ik.imagekit.io/mbsk9dati/BELLEZA/img_123.png" alt="BRILLO MISS BETTY X24 REF: L77163">
   </div>
   <div class="nombre-producto">BRILLO MISS BETTY X24 REF: L77163</div>
   
   <div class="precio-producto">$4400 COP</div>
-  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20BELLEZA%20BRILLOS%20BRILLO%20MISS%20BETTY%20X24%20REF%3A%20L77163.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FBELLEZA%2Fimg_123.png" target="_blank" class="boton-comprar">
-    COMPRAR
-  </a>
+  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20BELLEZA%20BRILLOS%20BRILLO%20MISS%20BETTY%20X24%20REF%3A%20L77163.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FBELLEZA%2Fimg_123.png" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_BEBC1FE" class="modal-imagen">
+  <div class="galeria-modal">
+    <img src="https://ik.imagekit.io/mbsk9dati/BELLEZA/img_123.png" alt="BRILLO MISS BETTY X24 REF: L77163" class="imagen-modal">
+  </div>
+  <div class="cerrar-modal" onclick="cerrarGaleria('modal_BEBC1FE')">X</div>
 </div>
     </div>
 
-  <div id="modalImagen" class="modal-imagen">
-    <img id="imagenModal" src="">
-    <div class="cerrar-modal" onclick="cerrarModal()">X</div>
-  </div>
-  <footer>
+    <footer>
     <div class="footer-links">
       <a href="#">Nosotros</a>
       <a href="#">Privacidad</a>
@@ -65,16 +67,13 @@
     </div>
   </footer>
   <script>
-    function mostrarModal(src) {
-      const modal = document.getElementById('modalImagen');
-      const img = document.getElementById('imagenModal');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function cerrarModal() {
-      document.getElementById('modalImagen').style.display = 'none';
-    }
-  </script>
+  function abrirGaleria(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function cerrarGaleria(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
 </main>
 </body>
 </html>
