@@ -37,7 +37,7 @@
     <div class="grid-productos">
 
 <div class="producto">
-  <div class="imagen-producto" onclick="mostrarModal('https://ik.imagekit.io/mbsk9dati/La%20pintaco/1/IMG_20250811_230722_345.jpg?updatedAt=1754971829393')">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_6A779E79')">
     <img src="https://ik.imagekit.io/mbsk9dati/La%20pintaco/1/IMG_20250811_230722_345.jpg?updatedAt=1754971829393" alt="HERMOSO ENTERIZO DULCE EN ENERG?CA CON COPA">
   </div>
   <div class="nombre-producto">HERMOSO ENTERIZO DULCE EN ENERG?CA CON COPA</div>
@@ -45,13 +45,19 @@
 <div class="descripcion-producto">TALLA UNICA</div>
 
   <div class="precio-producto">$55000 COP</div>
-  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20CONJUNTOS%20ENTERIZO%20HERMOSO%20ENTERIZO%20DULCE%20EN%20ENERG%C3%8DCA%20CON%20COPA.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FLa%2520pintaco%2F1%2FIMG_20250811_230722_345.jpg%3FupdatedAt%3D1754971829393" target="_blank" class="boton-comprar">
-    COMPRAR
-  </a>
+  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20CONJUNTOS%20ENTERIZO%20HERMOSO%20ENTERIZO%20DULCE%20EN%20ENERG%C3%8DCA%20CON%20COPA.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FLa%2520pintaco%2F1%2FIMG_20250811_230722_345.jpg%3FupdatedAt%3D1754971829393" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_6A779E79" class="modal-imagen">
+  <div class="galeria-modal">
+    <img src="https://ik.imagekit.io/mbsk9dati/La%20pintaco/1/IMG_20250811_230722_345.jpg?updatedAt=1754971829393" alt="HERMOSO ENTERIZO DULCE EN ENERG?CA CON COPA" class="imagen-modal">
+  </div>
+  <div class="cerrar-modal" onclick="cerrarGaleria('modal_6A779E79')">X</div>
 </div>
 
 <div class="producto">
-  <div class="imagen-producto" onclick="mostrarModal('https://ik.imagekit.io/mbsk9dati/La%20pintaco/1/IMG_20250811_230721_873.jpg?updatedAt=1754971829313')">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_9187699F')">
     <img src="https://ik.imagekit.io/mbsk9dati/La%20pintaco/1/IMG_20250811_230721_873.jpg?updatedAt=1754971829313" alt="HERMOSO ENTERIZO DULCE EN ENERGICA CON COPA">
   </div>
   <div class="nombre-producto">HERMOSO ENTERIZO DULCE EN ENERGICA CON COPA</div>
@@ -59,17 +65,19 @@
 <div class="descripcion-producto">TALLA UNICA</div>
 
   <div class="precio-producto">$55000 COP</div>
-  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20CONJUNTOS%20ENTERIZO%20HERMOSO%20ENTERIZO%20DULCE%20EN%20ENERGICA%20CON%20COPA.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FLa%2520pintaco%2F1%2FIMG_20250811_230721_873.jpg%3FupdatedAt%3D1754971829313" target="_blank" class="boton-comprar">
-    COMPRAR
-  </a>
+  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20CONJUNTOS%20ENTERIZO%20HERMOSO%20ENTERIZO%20DULCE%20EN%20ENERGICA%20CON%20COPA.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FLa%2520pintaco%2F1%2FIMG_20250811_230721_873.jpg%3FupdatedAt%3D1754971829313" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_9187699F" class="modal-imagen">
+  <div class="galeria-modal">
+    <img src="https://ik.imagekit.io/mbsk9dati/La%20pintaco/1/IMG_20250811_230721_873.jpg?updatedAt=1754971829313" alt="HERMOSO ENTERIZO DULCE EN ENERGICA CON COPA" class="imagen-modal">
+  </div>
+  <div class="cerrar-modal" onclick="cerrarGaleria('modal_9187699F')">X</div>
 </div>
     </div>
 
-  <div id="modalImagen" class="modal-imagen">
-    <img id="imagenModal" src="">
-    <div class="cerrar-modal" onclick="cerrarModal()">X</div>
-  </div>
-  <footer>
+    <footer>
     <div class="footer-links">
       <a href="#">Nosotros</a>
       <a href="#">Privacidad</a>
@@ -81,16 +89,13 @@
     </div>
   </footer>
   <script>
-    function mostrarModal(src) {
-      const modal = document.getElementById('modalImagen');
-      const img = document.getElementById('imagenModal');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function cerrarModal() {
-      document.getElementById('modalImagen').style.display = 'none';
-    }
-  </script>
+  function abrirGaleria(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function cerrarGaleria(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
 </main>
 </body>
 </html>
