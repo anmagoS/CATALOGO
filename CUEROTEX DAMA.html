@@ -37,23 +37,25 @@
     <div class="grid-productos">
 
 <div class="producto">
-  <div class="imagen-producto" onclick="mostrarModal('https://ik.imagekit.io/mbsk9dati/CHAQUETAS%20/CUEROTEX%20DAMA/7042ac4d-e1cf-48e1-9bf3-88a4f4ba11ac.jpg?updatedAt=1754674240974')">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_EE03DCC0')">
     <img src="https://ik.imagekit.io/mbsk9dati/CHAQUETAS%20/CUEROTEX%20DAMA/7042ac4d-e1cf-48e1-9bf3-88a4f4ba11ac.jpg?updatedAt=1754674240974" alt="ROJA  S-M-L-XL">
   </div>
   <div class="nombre-producto">ROJA  S-M-L-XL</div>
   
   <div class="precio-producto">$50000 COP</div>
-  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20CUEROTEX%20DAMA%20TORERA%20CLASICA%20ROJA%20%20S-M-L-XL.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FCHAQUETAS%2520%2FCUEROTEX%2520DAMA%2F7042ac4d-e1cf-48e1-9bf3-88a4f4ba11ac.jpg%3FupdatedAt%3D1754674240974" target="_blank" class="boton-comprar">
-    COMPRAR
-  </a>
+  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20CUEROTEX%20DAMA%20TORERA%20CLASICA%20ROJA%20%20S-M-L-XL.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2FCHAQUETAS%2520%2FCUEROTEX%2520DAMA%2F7042ac4d-e1cf-48e1-9bf3-88a4f4ba11ac.jpg%3FupdatedAt%3D1754674240974" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_EE03DCC0" class="modal-imagen">
+  <div class="galeria-modal">
+    <img src="https://ik.imagekit.io/mbsk9dati/CHAQUETAS%20/CUEROTEX%20DAMA/7042ac4d-e1cf-48e1-9bf3-88a4f4ba11ac.jpg?updatedAt=1754674240974" alt="ROJA  S-M-L-XL" class="imagen-modal">
+  </div>
+  <div class="cerrar-modal" onclick="cerrarGaleria('modal_EE03DCC0')">X</div>
 </div>
     </div>
 
-  <div id="modalImagen" class="modal-imagen">
-    <img id="imagenModal" src="">
-    <div class="cerrar-modal" onclick="cerrarModal()">X</div>
-  </div>
-  <footer>
+    <footer>
     <div class="footer-links">
       <a href="#">Nosotros</a>
       <a href="#">Privacidad</a>
@@ -65,16 +67,13 @@
     </div>
   </footer>
   <script>
-    function mostrarModal(src) {
-      const modal = document.getElementById('modalImagen');
-      const img = document.getElementById('imagenModal');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function cerrarModal() {
-      document.getElementById('modalImagen').style.display = 'none';
-    }
-  </script>
+  function abrirGaleria(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function cerrarGaleria(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
 </main>
 </body>
 </html>
