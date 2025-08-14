@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMISETAS | ANMAGO STORE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ESTILOS.CSS" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ANMAGO STORE</div>
+    <nav class="nav">
+      <a href="INDEX.HTML" class="nav-link">Inicio</a>
+      <div class="dropdown">
+        <button class="nav-link dropdown-toggle">Productos</button>
+        <div class="dropdown-menu">
+          <a href="https://anmagoS.github.io/CATALOGO/VARIOS.html" class="dropdown-item">VARIOS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/CAMISETAS.html" class="dropdown-item">CAMISETAS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/KAWAII.html" class="dropdown-item">KAWAII</a>
+          <a href="https://anmagoS.github.io/CATALOGO/BELLEZA.html" class="dropdown-item">BELLEZA</a>
+          <a href="https://anmagoS.github.io/CATALOGO/BLUSAS.html" class="dropdown-item">BLUSAS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/JUGUETERIA.html" class="dropdown-item">JUGUETERIA</a>
+          <a href="https://anmagoS.github.io/CATALOGO/ESCOLAR.html" class="dropdown-item">ESCOLAR</a>
+          <a href="https://anmagoS.github.io/CATALOGO/HOGAR.html" class="dropdown-item">HOGAR</a>
+          <a href="https://anmagoS.github.io/CATALOGO/PIJAMAS.html" class="dropdown-item">PIJAMAS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/JEANS%20DAMA.html" class="dropdown-item">JEANS DAMA</a>
+          <a href="https://anmagoS.github.io/CATALOGO/CUEROTEX%20DAMA.html" class="dropdown-item">CUEROTEX DAMA</a>
+          <a href="https://anmagoS.github.io/CATALOGO/CHAQUETAS.html" class="dropdown-item">CHAQUETAS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/ROPA%20DEPORTIVA.html" class="dropdown-item">ROPA DEPORTIVA</a>
+          <a href="https://anmagoS.github.io/CATALOGO/CONJUNTOS.html" class="dropdown-item">CONJUNTOS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/VESTIDOS.html" class="dropdown-item">VESTIDOS</a>
+        </div>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSevvlCBgz7L6l2-DecKQLazoswqzf7DRYWOaCq4FtMGOR6D2Q/viewform?usp=header" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+
+  <main style="margin-bottom:60px;">
+    <h1 class="titulo-categoria">CAMISETAS</h1>
+    <div class="subcategorias-menu">
+<a href="#hombre" class="boton-subcategoria">HOMBRE</a>
+    </div>
+
+    <h2 id="hombre" class="titulo-subcategoria">HOMBRE</h2>
+    <div class="grid-productos">
+
+<div class="producto">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_207')">
+    <img src="" alt="CAMISETA POLO">
+  </div>
+  <div class="nombre-producto">CAMISETA POLO</div>
+  
+  <div class="precio-producto">$50000 COP</div>
+  <a href="" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_207" class="modal-imagen">
+  <div class="contenido-modal">
+    <div class="galeria-modal">
+      
+    </div>
+    <div class="cerrar-modal" onclick="cerrarGaleria('modal_207')">X</div>
+  </div>
+</div>
+
+<div class="producto">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_610')">
+    <img src="" alt="CAMISETAS HOMBRE">
+  </div>
+  <div class="nombre-producto">CAMISETAS HOMBRE</div>
+  
+  <div class="precio-producto">$55000 COP</div>
+  <a href="" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_610" class="modal-imagen">
+  <div class="contenido-modal">
+    <div class="galeria-modal">
+      
+    </div>
+    <div class="cerrar-modal" onclick="cerrarGaleria('modal_610')">X</div>
+  </div>
+</div>
+    </div>
+
+    <footer>
+    <div class="footer-links">
+      <a href="#">Nosotros</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Ayuda</a>
+    </div>
+    <div class="medios-pago">
+      <h4>Medios de pago</h4>
+      <img src="https://ik.imagekit.io/mbsk9dati/pagos_procesados_por_epayco_370px.png?updatedAt=1754703963670" alt="Medios de pago">
+    </div>
+  </footer>
+  <script>
+  function abrirGaleria(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function cerrarGaleria(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+</main>
+</body>
+</html>
