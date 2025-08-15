@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LENCER?A | ANMAGO STORE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ESTILOS.CSS" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ANMAGO STORE</div>
+    <nav class="nav">
+      <a href="INDEX.HTML" class="nav-link">Inicio</a>
+      <div class="dropdown">
+        <button class="nav-link dropdown-toggle">Productos</button>
+        <div class="dropdown-menu">
+          <a href="https://anmagoS.github.io/CATALOGO/CHAQUETAS.html" class="dropdown-item">CHAQUETAS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/CONJUNTOS.html" class="dropdown-item">CONJUNTOS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/ROPA%20DEPORTIVA.html" class="dropdown-item">ROPA DEPORTIVA</a>
+          <a href="https://anmagoS.github.io/CATALOGO/VESTIDOS.html" class="dropdown-item">VESTIDOS</a>
+          <a href="https://anmagoS.github.io/CATALOGO/LENCER%C3%8DA.html" class="dropdown-item">LENCER?A</a>
+        </div>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSevvlCBgz7L6l2-DecKQLazoswqzf7DRYWOaCq4FtMGOR6D2Q/viewform?usp=header" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+
+  <main style="margin-bottom:60px;">
+    <h1 class="titulo-categoria">LENCER?A</h1>
+    <div class="subcategorias-menu">
+<a href="#damas" class="boton-subcategoria">DAMAS</a>
+    </div>
+
+    <h2 id="damas" class="titulo-subcategoria">DAMAS</h2>
+    <div class="grid-productos">
+
+<div class="producto">
+  <div class="imagen-producto" onclick="abrirGaleria('modal_174600CB')">
+    <img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_1.030504.jpg" alt="CONJUNTO PANTY">
+  </div>
+  <div class="nombre-producto">CONJUNTO PANTY</div>
+  <div class="descripcion-producto">UNICA</div>
+
+  <div class="precio-producto">$50000 COP</div>
+  <a href="https://wa.me/+573006498710?text=Hola%20AnmagoStore%20estoy%20interesad%40%20en%20LENCER%C3%8DA%20DAMAS%20CONJUNTO%20PANTY.%20te%20comparto%20imagen%20del%20producto%20aqu%C3%AD%3A%20https%3A%2F%2Fik.imagekit.io%2Fmbsk9dati%2Fproducto_111%2FPRODUCTOS_Images_174600cb.IMAGEN_1.030504.jpg" target="_blank" class="boton-comprar">COMPRAR</a>
+</div>
+
+<!-- MODAL DE GALER?A -->
+<div id="modal_174600CB" class="modal-imagen">
+  <div class="contenido-modal">
+    <div class="galeria-modal">
+      <img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_1.030504.jpg" alt="CONJUNTO PANTY" class="imagen-modal">
+<img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_2.030504.jpg" alt="CONJUNTO PANTY" class="imagen-modal">
+<img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_3.030505.jpg" alt="CONJUNTO PANTY" class="imagen-modal">
+<img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_4.030507.jpg" alt="CONJUNTO PANTY" class="imagen-modal">
+<img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_5.030507.jpg" alt="CONJUNTO PANTY" class="imagen-modal">
+<img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_6.030507.jpg" alt="CONJUNTO PANTY" class="imagen-modal">
+<img src="https://ik.imagekit.io/mbsk9dati/producto_111/PRODUCTOS_Images_174600cb.IMAGEN_7.030510.jpg" alt="CONJUNTO PANTY" class="imagen-modal">
+    </div>
+    <div class="cerrar-modal" onclick="cerrarGaleria('modal_174600CB')">X</div>
+  </div>
+</div>
+    </div>
+
+    <footer>
+    <div class="footer-links">
+      <a href="#">Nosotros</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Ayuda</a>
+    </div>
+    <div class="medios-pago">
+      <h4>Medios de pago</h4>
+      <img src="https://ik.imagekit.io/mbsk9dati/pagos_procesados_por_epayco_370px.png?updatedAt=1754703963670" alt="Medios de pago">
+    </div>
+  </footer>
+  <script>
+  function abrirGaleria(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function cerrarGaleria(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+</main>
+</body>
+</html>
